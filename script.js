@@ -4,11 +4,6 @@ const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 let currentCardIndex = 0;
 
-carduri.style.transform = 'translateY(0)';
-cards.forEach((card, index) => {
-  card.style.transform = `translateY(${index * 100}%)`;
-});
-
 prevBtn.addEventListener('click', () => {
   currentCardIndex--;
   if (currentCardIndex < 0) {
