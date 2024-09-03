@@ -63,7 +63,7 @@ button:hover {
 .hero-container {
     width: 100%;
     height: 850px;
-    background-image: url("imagini/hero-img.png");
+    background-image: url("imagini/hero-img.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,7 +247,7 @@ button:hover {
 
 
 .despre-container {
-    background-image: url(imagini/about-section.png);
+    background-image: url(imagini/about-section.jpg);
     width: 100%;
     height: 662px;
     background-size: cover;
