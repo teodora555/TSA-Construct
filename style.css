@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav-li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #0C0D0E;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo1{
+    height: 90px;    
+}
+
+.nav-container li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-container li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-container li a:hover {
+    color: #FF7512;
+}
+
+button {
+    padding: 12px 32px;
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #FF7512;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    border-style: none;
+}
+
+
+
+.hero-container {
+    width: 100%;
+    height: 850px;
+    background-image: url("imagini/hero-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-container .hero-text {
+    color: white;
+    background: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    margin-left: 124px;
+    text-align:left;
+}
+
+.hero-txt {
+    background-color: transparent;
+    margin-top: 25px;
+    width: 50%;
+}
+
+.btn {
+    background-color: transparent;
+    color: white;
+    margin-top: 50px;
+}
+
+
+.servicii-container {
+    display: block;
+    margin-bottom: 128px; 
+}
+
+
+.titlu-container {
+    display: block;
+    background-image: linear-gradient(to right, #C7D1D8, #F7F7F7);
+    width: 100%;
+    padding: 44px 0px 44px 124px;
+}
+
+.servicii-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s-info {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-top: 85px;
+    padding-left: 124px;
+    padding-right: 78px;
+}
+
+.s-p {
+    display: block;
+    border-left: 3px solid #FF7512;
+    padding-left: 15px;
+    margin-bottom: 32px;
+}
+
+.servicii {
+    display: inline-block;
+    margin-left: 120px;
+    
+    
+}
+
+.carduri {
+    position: relative;
+    margin-top: -60px;
+    padding-right: 124px;
+    gap: 24px;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.carduri::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    margin-bottom: 20px;
+    display: block;
+    opacity: 0.5;
+    width: 302px;
+    height: 186px;
+    box-shadow: 0 0 10px #C7D1D8;
+    border-radius: 4px;
+    padding: 24px;
+    background-color: white;
+    scroll-snap-align: center;
+    overflow: hidden;
+}
+
+.card:first-child {
+    display: block;
+    opacity: 1;
+    box-shadow: 0 0 20px #C7D1D8;
+}
+
+.prev-btn, .next-btn {
+    position: relative;
+    margin-top: 24px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-style: none;
+}
+
+.prev-btn {
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 80px;
+    background-image: url(/imagini/icons8-right-arrow-50\ -\ Copy.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    top: 0;
+}
+
+.next-btn {
+    height: 50px;
+    background-image: url(/imagini/icons8-right-arrow-50\.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    bottom: 0;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    box-shadow: 0 0 20px #C7D1D8;
+}
+
+
+
+.informatii-container {
+    display: block;
+    margin-bottom: 128px; 
+}
+
+.informatii-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info {
+    width: 100%;
+    height: 850px;
+    background-image: url("imagini/sectiunea-info.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-p {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-top: 85px;
+    padding-left: 124px;
+    padding-right: 78px;
+}
+
+.info-img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 124px;
+    margin-top: 72px;
+}
+
+.element {
+    display: flex;
+    width: 240px;
+    align-items: center;
+    justify-content:left;
+}
+
+.sageata-orange {
+    margin-right: 12px;
+}
+
+
+.despre-container {
+    background-image: url(/imagini/about-section.png);
+    width: 100%;
+    height: 662px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.despre{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    padding-left: 128px;
+}
+
+.titlu-despre {
+    margin-top: 80px;
+    margin-bottom: 104px;
+}
+
+.despr {
+    margin-bottom: 32px;
+}
+
+.h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.btn-despr {
+    background-color: transparent;
+}
+
+#btn-test {
+    position: relative;
+    margin-top: 24px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-style: none;
+}
+
+.testimoniale-container {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
+
+.titlu-testimoniale {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40px;
+}
+
+
+.testimoniale-carduri {
+    display: flex;
+    width: 50%;
+    gap: 32px;
+    padding-left: 32px;
+    transition: transform 0.5s ease;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.client-card {
+    display: block;
+    position: relative;
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    width: 408px;
+    height: 206px;
+    background-color: white;
+    box-shadow: 0 0 20px #C7D1D8;
+    border-radius: 4%;
+    padding: 40px;
+    
+}
+  
+  .client-card:last-child {
+    overflow: hidden;
+  }
+  
+  .header-card-client {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+  
+  .client-img {
+    border-radius: 50%;
+    margin-right: 28px;
+  }
+  
+  .testimonial {
+    width: 398px;
+  }
+
+  .prev-btn-t, .next-btn-t {
+    
+    position: relative;
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+.prev-btn-t {
+    background-image: url(/imagini/icons8-right-arrow-50\ -\ Copy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    left: 10px;
+    height: 60px;
+  }
+
+  .next-btn-t {
+    background-image: url(/imagini/icons8-right-arrow-50.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    right: 10px;
+  }
+
+  .prev-btn-t:hover, .next-btn-t:hover {
+    box-shadow: #494C4E;
+  }
+
+  #btn-t {
+    display: flex;
+    gap: 60px;
+    margin-left: 184px;
+    margin-top: 40px;
+
+
+  }
+
+.contact-card {
+    display: flex;
+    margin: -20px 200px 128px 200px;
+    box-shadow: 0 0 10px #C7D1D8;
+    border-radius: 4px;
+    background-color: white;
+}
+
+form {
+    display: block;
+    margin: 60px 80px 60px 120px;
+}
+
+.input {
+    margin-bottom: 22px;
+}
+
+input {
+    border-style: solid;
+    border-radius: 4px;
+    width: 360px;
+    height: 48px;
+}
+
+.detalii-firma {
+    display: block;
+    margin: 189px 126px 189px 0px;
+}
+
+.input-firma {
+    display: block;
+}
+
+.detaliu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.img-input {
+    margin-right: 12px;
+}
+
+footer {
+    display: block;
+    background-color: #494C4E;
+    height: 382px;
+    color: white;
+    padding: 60px 124px 32px 124px;
+}
+
+.footer-li {
+    color: white;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.logo-text {
+    display: block;
+}
+
+.l-text {
+    width: 225px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.btn-principal {
+    color: white;
+    background-color: #FF7512;
+}
+
+.btn-footer {
+    color: white;
+    background-color: #FF7512;
+    width: 200px;
+    height: 48px;
+    font-size: 14px;
+}
+
+hr {
+    display: block;
+    justify-content: center;
+    width: 1000px;
+    color: #5D5D6F;
+    margin: 32px 0px 32px 0px;
+}
+
+.copy {
+    display:block;
+    align-items: center;
+    color: #909BA2;
+}
+
+.footer-meniu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px 0px 100px;
+    gap: 50px;
+}
+

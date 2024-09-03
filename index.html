@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TSA Construct Servicii de Transport Matreiale de Construcții</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="title" content="TSA Construct Servicii de Transport Matreiale de Construcții">
+        <meta name="description" content="Descoperă oferta de servicii de transport pentru materiale de construcții în Cluj-Napoca, cu autobasculante 8x4 pentru pământ, balast, piatră și multe altele.">
+    </head>
+
+    <body>
+        
+        <div id="acasa" class="hero">
+            <header class="header-container">
+                <img src="/imagini/Logo TSA (orizontal) - remove background.png" alt="Logo TSA Construct - Servicii de Transport Materiale de Construcții" class="logo1" />
+                <nav>
+                    <ul class="nav-container">
+                        <li class="nav-li"><a href="#">Acasă</a></li>
+                        <li class="nav-li"><a href="#servicii">Servicii</a></li>
+                        <li class="nav-li"><a href="#despre">Despre</a></li>
+                        <li class="nav-li"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#contact" class="cta"><button>Contactează-ne</button></a>
+            </header>
+          
+            <section class="hero-container">
+              <div class="hero-text">
+                <h1 class="hero-txt">SERVICII DE TRANSPORT MATERIALE CONSTRUCTII</h1>
+                <p class="hero-txt">Efectuăm transportul cu autobasculante 8x4 pentru transport de materiale reciclabile,
+                  pământ, materiale construcții, balast, pietriș, nisip etc.</p><br><br>
+                <a href="#contact" ><button class="btn-principal">Cere o ofertă de preț</button></a>
+              </div>
+            </section>
+          
+            <section id="servicii" class="servicii-container">
+                <div class="titlu-container">
+                    <h2>SERVICII OFERITE</h2>
+                </div>
+
+                <div class="servicii-wrapper">
+                    <div class="s-info">
+                        <p class="s-p">Cere o ofertă de preț pentru a putea să vă oferim cele mai bune servicii în cel mai scurt timp posibil.  </p>
+                        <p class="s-p">Va fi nevoie să specificați numărul de telefon pentru a vă contacta, tipul de marfă dorit, cantitatea de marfă dorită și locația efectuării transportului.</p>
+                        <p class="s-p">Transporturile se realizează numai pe suprafața județului Cluj.
+                            Oferta de preț poate varia în funcție de numărul de km până la destinația transportului, dar și în funcție de starea drumului.</p><br>
+                        <a class="btn-principal" href="#contact"><button class="btn-principal">Cere o ofertă de preț</button></a>
+                    </div>
+
+                    <div class="servicii">
+                        <div class="carduri">
+                            <div class="card">
+                                <img src="/imagini/icons8-soil-50.png" height="24px" alt="Transport pământ">
+                                <h3>PĂMÂNT</h3>
+                                <p>Disponibilitate: pământ vegetal pentru grădini, pământ pentru umplutură.</p>
+                            </div>
+                            <div class="card">
+                                <img src="/imagini/icons8-rock-50.png" height="24px" alt="Transport piatră">
+                                <h3>PIATRĂ</h3>
+                                <p>Disponibilitate: piatră pentru întărirea solului, piatră pentru gabioane etc.</p>
+                            </div>
+                            <div class="card">                                
+                                <img src="/imagini/icons8-gravel-50.png" height="24px" alt="Transport balast">
+                                <h3>BALAST</h3>
+                                <p>Disponibilitate: balast cu granulație diferită, balast pentru fundații etc.</p>
+                            </div>
+                        </div>
+                        <button class="prev-btn"></button>
+                        <button class="next-btn"></button>
+                    </div>
+                    <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const carduri = document.querySelector('.carduri');
+                        const cards = document.querySelectorAll('.card');
+                        const prevBtn = document.querySelector('.prev-btn');
+                        const nextBtn = document.querySelector('.next-btn');
+                        const cardHeight = cards[0].offsetHeight; // Înălțimea unui card
+                        let currentIndex = 0;
+                    
+                        prevBtn.addEventListener('click', function() {
+                            if (currentIndex > 0) {
+                                currentIndex--;
+                                updateCarousel();
+                            }
+                        });
+                    
+                        nextBtn.addEventListener('click', function() {
+                            if (currentIndex < cards.length - 1) {
+                                currentIndex++;
+                                updateCarousel();
+                            }
+                        });
+                    
+                        function updateCarousel() {
+                            carduri.style.transform = `translateY(-${currentIndex * cardHeight}px)`;
+                        }
+                    });
+                    </script>                    
+                   
+                </div>
+            </section>
+          
+            <section id="despre" class="informatii-container">
+                <div class="titlu-container">
+                    <h2>INFORMAȚII DESPRE AUTOBASCULANTĂ</h2>
+                </div>
+                <div class="info">
+                    <div class="info-p">
+                        <p class="s-p">Serviciul nostru de transport marfă oferă clienților noștri toate informațiile necesare
+                            pentru a lua în considerare înainte de a începe transportul.</p>
+                        <p class="s-p">Autobasculanta MAN TGA 8x4 permite și rabatarea laterală sau doar descărcarea oblonului
+                            lateral pentru a descărca materialele.</p><br><br>
+                        <a href="#contact"><button>Contactează-ne</button></a>
+                    </div>
+
+                    <div>
+
+                    </div>
+
+                    <div class="info-img">
+                        <div class="element">
+                            <img class="sageata-orange" src="/imagini/icons8-orange-arrow-50.png" width="40px" alt="Caracteristici basculantă">
+                            <p>17.165 tone masa totală</p>
+                        </div>
+                        <div class="element">
+                            <img class="sageata-orange" src="/imagini/icons8-orange-arrow-50.png" width="40px" alt="Caracteristici basculantă">
+                            <p>Tractor semiremorcă</p>
+                        </div>
+                        <div class="element">
+                            <img class="sageata-orange" src="/imagini/icons8-orange-arrow-50.png" width="40px" alt="Caracteristici basculantă">
+                            <p>Șasiu basculantă</p>
+                        </div>
+                        <div class="element">
+                            <img class="sageata-orange" src="/imagini/icons8-orange-arrow-50.png" width="40px" alt="Caracteristici basculantă">
+                            <p>Șasiu platformă</p>
+                        </div>
+
+                    </div>
+                </div>
+              </div>
+            </section>
+          
+            <section class="despre-container">
+                <div class="despre">
+                  <h2 class="titlu-despre">DESPRE TSA CONSTRUCT</h2>
+
+                  <ul class="lisat-despre">
+                    <li class="despr">
+                      <span class="">👷</span>
+                      <span class="h3">MUNCITORI PROFESIONIȘTI</span>
+                      <p>Cea mai bună și bine pregătită echipă cu experiență de peste 10 ani.</p>
+                    </li>
+                    <li class="despr">
+                      <span class="">✅</span>
+                      <span class="h3">CALITATE GARANTATĂ</span>
+                      <p>Ne îndeplinim promisiunea de a oferi clienților servicii pe măsura nevoilor lor.</p>
+                    </li>
+                    <li class="despr">
+                      <span class="">📅</span>
+                      <span class="h3">EXPERIENȚĂ VASTĂ</span>
+                      <p>O experiență de peste 10 ani în domeniu și recunoaștere printre cele mai bune firme.</p>
+                    </li>
+                  </ul>
+                  <a href="#contact"><button class="btn-principal">Contactează-ne</button></a>
+                </div>
+              </div>
+            </section>
+          
+            <section class="testimoniale-container">
+                <div class="titlu-testimoniale">
+                    <h2 class="titlu-container">TESTIMONIALELE CLIENȚILOR</h2>
+                    <div id="btn-t">
+                        <button class="prev-btn-t"></button>
+                        <button class="next-btn-t"></button>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const testimonialeCarduri = document.querySelector('.testimoniale-carduri');
+                                const clientCards = document.querySelectorAll('.client-card');
+                                const prevBtn = document.querySelector('.prev-btn-t');
+                                const nextBtn = document.querySelector('.next-btn-t');
+                                let currentIndex = 0;
+                            
+                                function showCard(index) {
+                                    testimonialeCarduri.style.transform = `translateX(-${index * 100}%)`;
+                                }
+                            
+                                prevBtn.addEventListener('click', function() {
+                                    if (currentIndex > 0) {
+                                        currentIndex--;
+                                        showCard(currentIndex);
+                                    }
+                                });
+                            
+                                nextBtn.addEventListener('click', function() {
+                                    if (currentIndex < clientCards.length - 1) {
+                                        currentIndex++;
+                                        showCard(currentIndex);
+                                    }
+                                });
+                            
+                                showCard(currentIndex);
+                            });
+                            </script>
+                            
+                    </div>
+                </div>
+
+                <div class="testimoniale-carduri">
+
+                    <div class="client-card">
+
+                        <div class="header-card-client">
+                            <span class="client-img"><img src="/imagini/pic man 2.jpg" width="50px" height="50px" style="border-radius: 50%;" alt="Client mulțumit"></span>                       
+                            <div class="detalii-client">
+                                <h4>MARIAN P.</h4>
+                                <p style="color: #FF7512; font-size: 16px;">Client</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p>“Cei mai punctuali și atenți angajați. 
+                                Cu siguranță voi colabora cu ei și pe viitor.”</p>
+                        </div>
+                    </div>
+
+                    <div class="client-card">
+
+                        <div class="header-card-client">
+                            <span class="client-img"><img src="/imagini/pic man 3.jpeg" width="50px" height="50px" style="border-radius: 50%;" alt="Client mulțumit"></span>                       
+                            <div class="detalii-client">
+                                <h4>Rareș D.</h4>
+                                <p style="color: #FF7512; font-size: 16px;">Client</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p>“Cu astfel de servicii îți e drag să muncești!”</p>
+                        </div>
+                    </div>
+
+                    <div class="client-card" >
+                        <div class="header-card-client">
+                            <span class="client-img"><img src="/imagini/pic man 1.jpg" width="50px" height="50px" style="border-radius: 50%;" alt="Client mulțumit"></span>                       
+                            <div class="detalii-client">
+                                <h4>TUDOR C.</h4>
+                                <p style="color: #FF7512; font-size: 16px;">Client</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <p>“Mulțumesc pentru serviciile oferite și pentru înțelegere.”</p>
+                        </div>
+                    </div>
+                </div>
+                    
+            </section>
+          
+            <section id="contact" class="contacteaza-container">
+              
+                <h2 class="titlu-container">CONTACTEAZĂ-NE</h2>
+
+                <div class="contact-card">
+
+                    <form>
+                      <div class="input">
+                        <label >Numărul de telefon:</label><br>
+                        <input type="text" name="numarul de telefon" />
+                      </div>
+
+                      <div class="input">
+                        <label>Tipul de marfă dorit:</label><br>
+                        <input type="text" name="tipul de marfa"/>
+                      </div>
+
+                      <div class="input">
+                        <label>Cantitatea de marfă dorită:</label><br>
+                        <input type="text" name="cantitatea"/>
+                      </div>
+
+                      <div class="input">
+                        <label>Locație livrare transport:</label><br>
+                        <input type="text" name="locatie"/>
+                      </div>
+
+                      <button class="btn-principal" type="submit">Cere o ofertă de preț</button>
+                    </form>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const form = document.querySelector('form');
+                            const phoneInput = form.querySelector('input[name="numarul de telefon"]');
+                            const emailInput = form.querySelector('input[type="email"]');
+                    
+                            form.addEventListener('submit', function(event) {
+                                let valid = true;
+                    
+                                if (!/^\d+$/.test(phoneInput.value)) {
+                                    valid = false;
+                                    alert('Vă rugăm să introduceți un număr de telefon valid.');
+                                }
+                    
+                                if (!/\S+@\S+\.\S+/.test(emailInput.value)) {
+                                    valid = false;
+                                    alert('Vă rugăm să introduceți o adresă de email validă.');
+                                }
+                    
+                                if (!valid) {
+                                    event.preventDefault();
+                                }
+                            });
+                        });
+                    </script>
+                    
+
+                    <div class="detalii-firma">
+
+                        <div class="input-firma">
+                            <h4 class="label">Numărul de telefon:</h4>
+                            <div class="detaliu">
+                                <img class="img-input" src="imagini/icons8-phone-48.png" width="32px" alt="Numărul de telefon">
+                                <p>+40 785 77 89 27</p>
+                            </div>
+                        </div>
+
+                        <div class="input-firma">
+                            <h4 class="label">Adresa de email:</h4>
+                            <div class="detaliu">
+                                <img class="img-input" src="imagini/icons8-mail-24.png"  width="24" alt="Adresa de email">
+                                <p>tsa.construct@yahoo.com</p>
+                            </div>
+                        </div>
+
+                        <div class="input-firma">
+                            <h4 class="label">Adresa:</h4>
+                            <div class="detaliu">
+                                <img class="img-input" src="imagini/icons8-point-24.png" width="24" alt="Adresa">
+                                <p>Cluj, Cluj-Napoca</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+           
+            </section>
+
+            <section id="harta" class="harta-container">
+                <div class="titlu-container">
+                    <h2>LOCAȚIA NOASTRĂ</h2>
+                </div>
+                <div class="harta">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.8351348313436!2d23.583634115319957!3d46.77121067913598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c17701c1f07%3A0xf7cde7db4f564c87!2sCluj-Napoca%2C%20Romania!5e0!3m2!1sen!2s!4v1595087343313!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </section>
+          
+            <footer>
+                <div class="footer-container">
+
+                    <div class="logo-text">
+                        <img src="imagini/TSA logo white text (1).png" width="202px" alt="Logo TSA Construct - Servicii de Transport Materiale de Construcții" class="h-10" />
+                        <p class="l-text">TSA Construct este o firmă de transporturi înființată în anul 2006.</p>
+                    </div>
+
+                    <div class="footer-meniu">
+
+                        <div class="footer-nav">
+                            <h4 >Meniu</h3>
+                            <ul class="">
+                                <li class="footer-li"><a href="#acasa" style="color: white;">Acasă</a></li>
+                                <li class="footer-li"><a href="#servicii" style="color: white;">Servicii</a></li>
+                                <li class="footer-li"><a href="#despre" style="color: white;">Despre</a></li>
+                                <li class="footer-li"><a href="#contact" style="color: white;">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-detalii">
+                            <h4 >Link-uri externe</h3>
+                            <ul >
+                                <li class="footer-li"><a href="#" style="color: white;">Termeni</a></li>
+                                <li class="footer-li"><a href="#" style="color: white;">Condiții</a></li>
+                                <li class="footer-li"><a href="#" style="color: white;">Politică de confidențialitate</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-media">
+                            <h4 >Social media</h3>
+                            <ul >
+                                <li class="footer-li"><a href="#" style="color: white;">Facebook</a></li>
+                                <li class="footer-li"><a href="#" style="color: white;">Instagram</a></li>
+                                <li class="footer-li"><a href="#" style="color: white;">LinkedIn</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <a href="#"><button class="btn-footer">Contactează-ne</button></a>
+                    
+                </div>    
+
+                <hr>
+            
+                <p class="copy">&copy;Copyright. All rights reserved. TSA Construct 2024.</p>
+            </footer>
+          
+          
+    </body>
+</html>
